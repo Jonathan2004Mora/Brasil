@@ -1,15 +1,87 @@
-h1{
-    color:rgb(0, 0, 0); 
-    
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-body{
-    background-color: rgb(235, 250, 255);
+
+header {
+    background: linear-gradient(90deg, #00247D, #FFFFFF, #CF142B); /* Colores de una bandera */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
 }
+
+/* Sección principal */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #050506;
+}
+
+/* Pie de página */
+footer {
+    background: #bcc1b2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
 .center{
     text-align: center;
 }
-img {
-    display: block;
-    margin: 0 auto;
+
+img{
+    width: 1300px; /* Cambia el ancho según necesites */
+    height: 300px;
+}
+table {
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    border-collapse: none;
+    text-align: center; /* Centra el texto dentro de las celdas */
+    background-color: white;
+    border:none; /* Borde con color de referencia */
+}
+
+th, td {
+    border: none;
+    padding: 10px;
+}
+
+th {
+
+    color: rgb(0, 0, 0);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
+
+.button {
+    text-decoration: none;
+    background: #abe5bd; /* Color rojo (puedes cambiarlo) */
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #93adef; /* Azul al pasar el mouse */
 }
