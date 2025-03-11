@@ -4,9 +4,38 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    align-self:center;
+}
+a{
+    text-align: center;
 }
 
+.contenedorp {
+    position: relative;
+    display: inline-block;
+}
 
+.contenedorp img {
+    display: block;
+    width: 100%;
+    height: auto;
+    width: 1300px; /* Cambia el ancho según necesites */
+    height: 300px;
+}
+
+.textop {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0); /* Fondo semitransparente */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
 header {
     background: linear-gradient(90deg, #00247D, #FFFFFF, #CF142B); /* Colores de una bandera */
     color: white;
@@ -17,10 +46,13 @@ header {
 }
 
 /* Sección principal */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
+.contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el video y el texto */
+}
+.texto {
+    max-width: 400px; /* Ancho máximo del texto */
 }
 
 h1 {
@@ -30,7 +62,7 @@ h1 {
 
 /* Pie de página */
 footer {
-    background: #bcc1b2;
+    background: #919c7b;
     color: white;
     text-align: center;
     padding: 10px;
@@ -42,6 +74,12 @@ footer {
 }
 
 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.img_grande{
     width: 1300px; /* Cambia el ancho según necesites */
     height: 300px;
 }
@@ -63,7 +101,12 @@ th {
 
     color: rgb(0, 0, 0);
 }
-
+.button-container-volver {
+    display: flex;
+    justify-content: left;
+    gap: 25px; /* Espacio entre los botones */
+    margin-top: 20px;
+}
 .button-container {
     display: flex;
     justify-content: center;
@@ -73,7 +116,7 @@ th {
 
 .button {
     text-decoration: none;
-    background: #abe5bd; /* Color rojo (puedes cambiarlo) */
+    background: #e4f1e6; /* Color rojo (puedes cambiarlo) */
     color: rgb(0, 0, 0);
     padding: 12px 20px;
     border-radius: 5px;
@@ -83,5 +126,14 @@ th {
 }
 
 .button:hover {
-    background: #93adef; /* Azul al pasar el mouse */
+    background: #e5ec7f; /* Azul al pasar el mouse */
 }
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+footer a:hover {
+    color: rgb(12, 15, 233);
+  }
