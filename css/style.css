@@ -11,8 +11,13 @@ a{
 }
 
 .contenedorp {
-    position: relative;
-    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* Evita que se salga contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
 }
 
 .contenedorp img {
@@ -24,17 +29,15 @@ a{
 }
 
 .textop {
+   
     position: absolute;
-    top: 30%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    background: rgba(0, 0, 0, 0); /* Fondo semitransparente */
-    padding: 10px 20px;
-    border-radius: 10px;
 }
 header {
     background: linear-gradient(90deg, #00247D, #FFFFFF, #CF142B); /* Colores de una bandera */
@@ -48,8 +51,10 @@ header {
 /* Sección principal */
 .contenedor {
     display: flex;
-    align-items: center;
-    gap: 20px; /* Espacio entre el video y el texto */
+    align-items: center;  /* Alinea verticalmente */
+    margin-left: 300px;   /* Espacio a la izquierda */
+    margin-right: 20px;   /* Espacio a la derecha */
+    gap: 20px;            /* Espacio entre los elementos */
 }
 .texto {
     max-width: 400px; /* Ancho máximo del texto */
@@ -80,8 +85,9 @@ img{
     width: 40%;
 }
 .img_grande{
-    width: 1300px; /* Cambia el ancho según necesites */
-    height: 300px;
+    width: 100%; /* Ocupará todo el ancho de la pantalla */
+    height: 300px; /* Mantiene altura */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 table {
     width: 90%; /* Ajusta el ancho según sea necesario */
@@ -137,3 +143,33 @@ h2{
 footer a:hover {
     color: rgb(12, 15, 233);
   }
+
+.titulo {
+    font-size: 2.5rem;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.titulo.lobster { font-family: 'Lobster', cursive; color: #8f5f5a; }
+.titulo.pacifico { font-family: 'Pacifico', cursive; color: #597c68; }
+.titulo.sriracha { font-family: 'Sriracha', cursive; color: #5e7e94; }
+
+.parrafo{
+    font-size: 1.5rem;
+    margin: 20px;
+    cursor: pointer;
+    color: #0c0e0d;
+}
+
+.parrafo.merienda{
+    font-family: "Merienda";
+}
+.parrafo.questrial{
+    font-family:"Questrial";
+}
+.parrafo.krona{
+    font-family:"Krona One";
+}
+.espacio {
+    flex-grow: 1; /* Hace que este div ocupe el espacio sobrante */
+}
